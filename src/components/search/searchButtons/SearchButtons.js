@@ -58,7 +58,7 @@ class SearchButtons extends React.Component {
       <Row className="search-button-row">
         <Col xs={ 12 } className="buttons">
           <Col xs={ 6 } className="search-algo-buttons">
-            <button className='button-size linear-search-button' onClick={ () => this.props.typeSet.startLinearSearch(binaryTimeout, linearTimeout) }>Linear Search</button>
+            <button className='button-size linear-search-button' onClick={ () => this.props.startLinearSearch(binaryTimeout, linearTimeout) }>Linear Search</button>
             <button className='button-size binary-search-button' onClick={ () => this.props.startBinarySearch(binaryTimeout, linearTimeout) }>Binary Search</button>
           </Col>
           <Col xs={ 6 } className="speed-buttons">

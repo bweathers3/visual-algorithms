@@ -29,7 +29,7 @@ class Navbar extends Component {
           <Link className="link" to="/search">
             <button className={ searchTabClass } id="search-tab" onClick={ (e) => {
                 if (this.props.location.pathname !== '/search') {
-                  this.props.searchBaseState();
+                  this.props.typeSet.searchBaseState();
                   this.props.changeSpeed('regular');
                 }
               }

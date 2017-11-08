@@ -1,12 +1,12 @@
 
-import actionTypeSet from './actionTypeSet';
-import actionBinarySearch from './actionBinarySearch';
-import actionBubbleSort from './actionBubbleSort';
-import actionInsertionSort from './actionInsertionSort';
-import actionLinearSearch from './actionLinearSearch';
-import actionMergeSort from './actionMergeSort';
-import actionQuickSort from './actionQuickSort';
-import actionSelectionSort from './actionSelectionSort';
+import * as  actionTypeSet from './actionTypeSet';
+import * as  actionBinarySearch from './actionBinarySearch';
+import * as  actionBubbleSort from './actionBubbleSort';
+import * as  actionInsertionSort from './actionInsertionSort';
+import * as  actionLinearSearch from './actionLinearSearch';
+import * as  actionMergeSort from './actionMergeSort';
+import * as  actionQuickSort from './actionQuickSort';
+import * as  actionSelectionSort from './actionSelectionSort';
 
 
 const actionCreators = {

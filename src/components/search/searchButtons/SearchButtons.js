@@ -53,12 +53,14 @@ class SearchButtons extends React.Component {
       clearTimeout(linearTimeout);
       clearTimeout(binaryTimeout);
     }
+console.log("this.props:");
+console.log(this.props);
 
     return (
       <Row className="search-button-row">
         <Col xs={ 12 } className="buttons">
           <Col xs={ 6 } className="search-algo-buttons">
-            <button className='button-size linear-search-button' onClick={ () => this.props.startLinearSearch(binaryTimeout, linearTimeout) }>Linear Search</button>
+            <button className='button-size linear-search-button' onClick={ () => this.props.linear.startLinearSearch(binaryTimeout, linearTimeout) }>Linear Search</button>
             <button className='button-size binary-search-button' onClick={ () => this.props.startBinarySearch(binaryTimeout, linearTimeout) }>Binary Search</button>
           </Col>
           <Col xs={ 6 } className="speed-buttons">

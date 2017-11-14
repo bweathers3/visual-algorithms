@@ -29,5 +29,5 @@ export function bubbleSort(sortArray, bubbleSwapsCounter, bubbleIndex, iteration
     iterations: iterations,
     isRunning: isRunning,
     isSorted: isSorted
-  }
+  };
 }

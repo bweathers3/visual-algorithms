@@ -32,5 +32,5 @@ export function binarySearch(searchArray, searchNumber, low, high, iterations) {
       isRunning: isRunning,
       targetFound: targetFound,
       target: target
-    }
+    };
 }

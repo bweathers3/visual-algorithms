@@ -37,6 +37,10 @@ class SearchButtons extends React.Component {
     var linearTimeout;
     var binaryTimeout;
 
+    console.log('this.props in searchButtons.js');
+    console.log(this.props);
+
+
     if (targetFound === false && isRunning && searchAlgorithm.name === 'Linear Search') {
       linearTimeout = setTimeout (() => {
       this.props.actions.linear.linearSearch(searchArray, searchNumber, low, high, iterations);
@@ -61,12 +65,12 @@ console.log(this.props);
         <Col xs={ 12 } className="buttons">
           <Col xs={ 6 } className="search-algo-buttons">
             <button className='button-size linear-search-button' onClick={ () => this.props.actions.typeSet.startLinearSearch(binaryTimeout, linearTimeout) }>Linear Search</button>
-            <button className='button-size binary-search-button' onClick={ () => this.props.startBinarySearch(binaryTimeout, linearTimeout) }>Binary Search</button>
+            <button className='button-size binary-search-button' onClick={ () => this.props.actions.typeSet.startBinarySearch(binaryTimeout, linearTimeout) }>Binary Search</button>
           </Col>
           <Col xs={ 6 } className="speed-buttons">
-            <button className={ slowSpeedClass } onClick={ () => this.props.changeSpeed('slow', binaryTimeout, linearTimeout) }>Slow</button>
-            <button className={ regularSpeedClass } onClick={ () => this.props.changeSpeed('regular', binaryTimeout, linearTimeout) }>Regular</button>
-            <button className={ fastSpeedClass } onClick={ () => this.props.changeSpeed('fast', binaryTimeout, linearTimeout) }>Fast</button>
+            <button className={ slowSpeedClass } onClick={ () => this.props.actions.typeSet.changeSpeed('slow', binaryTimeout, linearTimeout) }>Slow</button>
+            <button className={ regularSpeedClass } onClick={ () => this.props.actions.typeSet.changeSpeed('regular', binaryTimeout, linearTimeout) }>Regular</button>
+            <button className={ fastSpeedClass } onClick={ () => this.props.actions.typeSet.changeSpeed('fast', binaryTimeout, linearTimeout) }>Fast</button>
           </Col>
         </Col>
       </Row>

@@ -32,5 +32,5 @@ export function insertionSort(sortArray, index, key, currentlyChecking, iteratio
     iterations: iterations,
     isRunning: isRunning,
     isSorted: isSorted
-  }
+  };
 }

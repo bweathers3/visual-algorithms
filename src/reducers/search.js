@@ -44,14 +44,14 @@ function search(state = searchState, action) {
         searchNumber: searchArray[Math.floor((Math.random() * 225) + 1)],
         isRunning: false,
         paused: false
-      }
+      };
 
     case 'TOGGLE_PLAY_PAUSE' :
       return {
         ...state,
         isRunning: action.isRunning,
         paused: action.paused
-      }
+      };
 
     case 'START_BINARY_SEARCH' :
       return {
@@ -68,7 +68,7 @@ function search(state = searchState, action) {
         searchNumber: newSearchNumber,
         isRunning: true,
         paused: false
-      }
+      };
 
     case 'BINARY_SEARCH' :
       return {
@@ -83,7 +83,7 @@ function search(state = searchState, action) {
         index: action.index,
         isRunning: action.isRunning,
         targetFound: action.targetFound,
-      }
+      };
 
       case 'START_LINEAR_SEARCH' :
         return {
@@ -100,7 +100,7 @@ function search(state = searchState, action) {
           searchNumber: newSearchNumber,
           isRunning: true,
           paused: false
-        }
+        };
 
     case 'LINEAR_SEARCH' :
       return {
@@ -115,7 +115,7 @@ function search(state = searchState, action) {
         index: action.index,
         isRunning: action.isRunning,
         targetFound: action.targetFound,
-      }
+      };
 
     default:
       return state;

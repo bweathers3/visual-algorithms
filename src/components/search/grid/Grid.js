@@ -35,7 +35,7 @@ class Grid extends React.Component {
         </Col>
       </Row>
     )
-  }
+  };
 }
 
 export default Grid;

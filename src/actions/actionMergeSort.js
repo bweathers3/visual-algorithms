@@ -224,5 +224,5 @@ export function mergeSort(mergeArray, mergePrior, mergePriorSorted, mergeArrayMa
     isRunning: isRunning,
     isSorted: isSorted,
     mergeFinalSort: mergeFinalSort
-  }
+  };
 }

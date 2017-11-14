@@ -38,5 +38,5 @@ export function selectionSort(sortArray, sortedGroupIndex, currentlyChecking, cu
     iterations: iterations,
     isRunning: isRunning,
     isSorted: isSorted
-  }
+  };
 }

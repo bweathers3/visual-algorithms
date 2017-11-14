@@ -25,5 +25,5 @@ export function linearSearch(searchArray, searchNumber, low, high, iterations) {
     isRunning: isRunning,
     targetFound: targetFound,
     target: target
-  }
+  };
 }

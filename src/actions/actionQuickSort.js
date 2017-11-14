@@ -62,5 +62,5 @@ export function quickSort(sortArray, currentlyChecking, quickPivotIndex, quickLo
     isRunning: isRunning,
     isSorted: isSorted,
     stopQuickSort: stopQuickSort
-  }
+  };
 }

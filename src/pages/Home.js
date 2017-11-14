@@ -34,7 +34,7 @@ class Home extends Component {
         </Col>
       </Row>
     )
-  }
+  };
 }
 
 export default Home;

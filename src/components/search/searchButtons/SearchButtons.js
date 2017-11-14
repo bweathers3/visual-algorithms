@@ -39,7 +39,7 @@ class SearchButtons extends React.Component {
 
     if (targetFound === false && isRunning && searchAlgorithm.name === 'Linear Search') {
       linearTimeout = setTimeout (() => {
-      this.props.linearSearch(searchArray, searchNumber, low, high, iterations);
+      this.props.actions.linear.linearSearch(searchArray, searchNumber, low, high, iterations);
       }, intervalSpeed);
     }
 
@@ -54,11 +54,13 @@ class SearchButtons extends React.Component {
       clearTimeout(binaryTimeout);
     }
 
+console.log(this.props);
+
     return (
       <Row className="search-button-row">
         <Col xs={ 12 } className="buttons">
           <Col xs={ 6 } className="search-algo-buttons">
-            <button className='button-size linear-search-button' onClick={ () => this.props.startLinearSearch(binaryTimeout, linearTimeout) }>Linear Search</button>
+            <button className='button-size linear-search-button' onClick={ () => this.props.actions.typeSet.startLinearSearch(binaryTimeout, linearTimeout) }>Linear Search</button>
             <button className='button-size binary-search-button' onClick={ () => this.props.startBinarySearch(binaryTimeout, linearTimeout) }>Binary Search</button>
           </Col>
           <Col xs={ 6 } className="speed-buttons">

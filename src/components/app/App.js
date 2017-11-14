@@ -9,7 +9,8 @@ function mapStateToProps(state) {
     search: state.search,
     sort: state.sort,
     speed: state.speed,
-    tabControl: state.tabControl
+    tabControl: state.tabControl,
+    actions: actionCreators.default
   }
 }
 

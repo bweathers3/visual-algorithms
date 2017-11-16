@@ -1,3 +1,11 @@
+export function startSelectionSort(...timeouts) {
+  for (var i = 0; i < timeouts.length; i++) {
+    clearTimeout(timeouts[i]);
+  }
+  return {
+    type: 'START_SELECTION_SORT'
+  };
+}
 
 export function selectionSort(sortArray, sortedGroupIndex, currentlyChecking, currentLow, iterations, isSorted = false, selectionSwapping = false) {
   iterations += 1;

@@ -1,3 +1,12 @@
+export function startInsertionSort(...timeouts) {
+  for (var i = 0; i < timeouts.length; i++) {
+    clearTimeout(timeouts[i]);
+  }
+  return {
+    type: 'START_INSERTION_SORT'
+  };
+}
+
 export function insertionSort(sortArray, index, key, currentlyChecking, iterations, isSorted = false, slideRight = false, verticalSlide = false) {
   var isRunning = true;
   var replacedIndex = 0;

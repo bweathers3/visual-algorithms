@@ -1,3 +1,11 @@
+export function startBinarySearch(binaryTimeout, linearTimeout) {
+  clearTimeout(binaryTimeout);
+  clearTimeout(linearTimeout);
+  return {
+    type: 'START_BINARY_SEARCH'
+  };
+}
+
 export function binarySearch(searchArray, searchNumber, low, high, iterations) {
 
     iterations += 1;

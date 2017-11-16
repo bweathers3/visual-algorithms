@@ -28,8 +28,16 @@ const searchState = {
 function search(state = searchState, action) {
   var newSearchArray = randomlyGenerateArray(225, 999);
   var newSearchNumber = newSearchArray[Math.floor((Math.random() * 225 ) + 1)];
+
+  console.log('inside search');
+  console.log('state');
+  console.log(state);
+  console.log('action');
+  console.log(action);
+
   switch(action.type) {
     case 'SEARCH_BASE_STATE' :
+      console.log('inside SEARCH_BASE_STATE');
       return {
         ...state,
         searchArray: searchArray,
@@ -47,6 +55,7 @@ function search(state = searchState, action) {
       };
 
     case 'TOGGLE_PLAY_PAUSE' :
+      console.log('TOGGLE_PLAY_PAUSE');
       return {
         ...state,
         isRunning: action.isRunning,
@@ -54,6 +63,7 @@ function search(state = searchState, action) {
       };
 
     case 'START_BINARY_SEARCH' :
+      console.log('inside START_BINARY_SEARCH');
       return {
         ...state,
         searchArray: newSearchArray,
@@ -71,6 +81,7 @@ function search(state = searchState, action) {
       };
 
     case 'BINARY_SEARCH' :
+      console.log('inside BINARY_SEARCH');
       return {
         ...state,
         searchAlgorithm: binarySearch,
@@ -86,6 +97,7 @@ function search(state = searchState, action) {
       };
 
       case 'START_LINEAR_SEARCH' :
+        console.log('inside START_LINEAR_SEARCH');
         return {
           ...state,
           searchArray: newSearchArray,
@@ -103,6 +115,7 @@ function search(state = searchState, action) {
         };
 
     case 'LINEAR_SEARCH' :
+      console.log('inside LINEAR_SEARCH');
       return {
         ...state,
         searchAlgorithm: linearSearch,

@@ -15,8 +15,8 @@ class Home extends Component {
             <Link className="link" to="/search">
               <h3 className="algo-header">Search Algorithms</h3>
               <img className='search-img' src={require('../images/search-img.jpg')} alt="Searching Algorithm" onClick={ (e) => {
-                  this.props.searchBaseState();
-                  this.props.changeSpeed('regular');
+                  this.props.actions.types.searchBaseState();
+                  this.props.actions.types.changeSpeed('regular');
                 }
               }></img>
             </Link>
@@ -25,8 +25,8 @@ class Home extends Component {
             <Link className="link" to="/sort">
               <h3 className="algo-header">Sort Algorithms</h3>
               <img className='sort-img' src={require('../images/sort-img.jpg')} alt="Sorting Algorithm" onClick={ (e) => {
-                  this.props.sortBaseState();
-                  this.props.changeSpeed('regular');
+                  this.props.actions.types.sortBaseState();
+                  this.props.actions.types.changeSpeed('regular');
                 }
               }></img>
             </Link>

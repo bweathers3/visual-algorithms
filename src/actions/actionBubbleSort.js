@@ -1,3 +1,12 @@
+export function startBubbleSort(...timeouts) {
+  for (var i = 0; i < timeouts.length; i++) {
+    clearTimeout(timeouts[i]);
+  }
+  return {
+    type: 'START_BUBBLE_SORT'
+  };
+}
+
 export function bubbleSort(sortArray, bubbleSwapsCounter, bubbleIndex, iterations, isSorted = false, bubbleSwapping = false) {
   var isRunning = true;
   if (bubbleIndex === sortArray.length - 1) {

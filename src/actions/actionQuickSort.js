@@ -1,3 +1,12 @@
+export function startQuickSort(...timeouts) {
+  for (var i = 0; i < timeouts.length; i++) {
+    clearTimeout(timeouts[i]);
+  }
+  return {
+    type: 'START_QUICK_SORT'
+  };
+}
+
 export function quickSort(sortArray, currentlyChecking, quickPivotIndex, quickLowIndex, quickHighIndex, quickPairsToSort, quickPriorPivots, iterations, stopQuickSort, isSorted = false, quickSwapping = false, quickSwappedIndices = []) {
   var isRunning = true;
   if (stopQuickSort === true) {

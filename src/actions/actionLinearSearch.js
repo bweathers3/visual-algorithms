@@ -1,3 +1,12 @@
+export function startLinearSearch(binaryTimeout, linearTimeout) {
+
+  clearTimeout(binaryTimeout);
+  clearTimeout(linearTimeout);
+  return {
+    type: 'START_LINEAR_SEARCH'
+  };
+}
+
 export function linearSearch(searchArray, searchNumber, low, high, iterations) {
   var testItem = iterations;
   iterations += 1;

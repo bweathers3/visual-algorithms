@@ -8,6 +8,9 @@ class SearchAlgorithms extends Component {
 
   render() {
 
+  console.log('inside SearchAlgorithms $$$$$$');
+
+
     return (
       <Row className="search-algo-row">
         <Col xs={ 12 } className="search-area">
@@ -21,5 +24,8 @@ class SearchAlgorithms extends Component {
     );
   }
 }
+
+
+console.log('Exiting SearchAlgorithms $$$$$$');
 
 export default SearchAlgorithms;

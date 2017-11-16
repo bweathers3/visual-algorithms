@@ -5,6 +5,8 @@ import Main from '../../pages/Main';
 import './App.css';
 
 function mapStateToProps(state) {
+
+  console.log('inside App function mapStateToProps')
   return {
     search: state.search,
     sort: state.sort,
@@ -15,6 +17,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
+  console.log('inside App function mapDispatchToProps')
   return bindActionCreators(actionCreators, dispatch);
 };
 

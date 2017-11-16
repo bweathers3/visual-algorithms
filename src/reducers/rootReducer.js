@@ -7,4 +7,6 @@ import sort from './sort';
 
 const rootReducer = combineReducers({ search, speed, sort, routing: routerReducer });
 
+console.log('inside ---- rootReducer');
+
 export default rootReducer;

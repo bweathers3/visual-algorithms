@@ -1,4 +1,6 @@
 export function startBinarySearch(binaryTimeout, linearTimeout) {
+  console.log('inside ---- startBinarySearch');
+  
   clearTimeout(binaryTimeout);
   clearTimeout(linearTimeout);
   return {
@@ -15,6 +17,8 @@ export function binarySearch(searchArray, searchNumber, low, high, iterations) {
     var mid = Math.floor((low + high) / 2);
 
     var testItem = mid;
+
+    console.log('inside ---- binarySearch');
 
     if (searchArray[testItem] !== searchNumber && isRunning) {
       searchNumber < searchArray[testItem] ? high = mid : low = mid;

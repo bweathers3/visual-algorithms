@@ -1,5 +1,5 @@
 export function startLinearSearch(binaryTimeout, linearTimeout) {
-
+  console.log('inside ---- startLinearSearch');
   clearTimeout(binaryTimeout);
   clearTimeout(linearTimeout);
   return {
@@ -12,6 +12,8 @@ export function linearSearch(searchArray, searchNumber, low, high, iterations) {
   iterations += 1;
   var isRunning = true;
   var targetFound = false;
+
+console.log('inside ---- linearSearch');
 
   if (searchArray[testItem] !== searchNumber && isRunning) {
     low ++;

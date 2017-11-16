@@ -29,7 +29,7 @@ function search(state = searchState, action) {
   var newSearchArray = randomlyGenerateArray(225, 999);
   var newSearchNumber = newSearchArray[Math.floor((Math.random() * 225 ) + 1)];
 
-  console.log('inside search');
+  console.log('inside search reducer action then state ');
   console.log('state');
   console.log(state);
   console.log('action');

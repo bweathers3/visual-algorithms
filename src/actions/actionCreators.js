@@ -20,5 +20,6 @@ const actionCreators = {
   selection: actionSelectionSort
 };
 
+console.log('inside ---- actionCreators');
 
 export default actionCreators;

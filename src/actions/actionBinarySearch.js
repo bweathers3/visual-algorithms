@@ -1,8 +1,9 @@
 export function startBinarySearch(binaryTimeout, linearTimeout) {
   console.log('inside ---- startBinarySearch');
-  
+
   clearTimeout(binaryTimeout);
   clearTimeout(linearTimeout);
+  console.log('inside ---- startBinarySearch');
   return {
     type: 'START_BINARY_SEARCH'
   };
